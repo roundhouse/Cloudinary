@@ -1,0 +1,28 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: "API Key"|t('cloudinary'),
+    id: 'apiKey',
+    name: 'apiKey',
+    value: volume.apiKey,
+    errors: volume.getErrors('apiKey'),
+    required: true
+}) }}
+
+{{ forms.textField({
+    label: "API Secret"|t('cloudinary'),
+    id: 'apiSecret',
+    name: 'apiSecret',
+    value: volume.apiSecret,
+    errors: volume.getErrors('apiSecret'),
+    required: true
+}) }}
+
+{{ forms.textField({
+    label: "Cloud Name"|t('cloudinary'),
+    id: 'cloudName',
+    name: 'cloudName',
+    value: volume.cloudName,
+    errors: volume.getErrors('cloudName'),
+    required: true
+}) }}

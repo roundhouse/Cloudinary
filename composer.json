@@ -1,0 +1,35 @@
+{
+  "name": "roundhouse/cloudinary",
+  "description": "Cloudinary integration for Craft CMS",
+  "type": "craft-plugin",
+  "version": "1.0.0",
+  "keywords": [
+    "cloudinary",
+    "cms",
+    "craftcms",
+    "flysystem",
+    "yii2"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vadim Goncharov",
+      "homepage": "https://github.com/owldesign"
+    }
+  ],
+  "require": {
+    "craftcms/cms": "^3.1.5",
+    "roundhouse/flysystem-cloudinary": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "craft\\cloudinary\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Cloudinary",
+    "handle": "cloudinary",
+    "changelogUrl": "https://raw.githubusercontent.com/roundhouse/cloudinary/master/CHANGELOG.md",
+    "downloadUrl": "https://github.com/roundhouse/cloudinary/archive/master.zip"
+  }
+}
